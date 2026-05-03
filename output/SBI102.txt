@@ -1,0 +1,8 @@
+cd 'c:\Users\mansi\Desktop\BANK MANAGEMENT\output'
+SBI102
+Mansi@8989
+& .\'PROJECT1.exe'
+1
+12587878
+500
+Deposit: 500.000000

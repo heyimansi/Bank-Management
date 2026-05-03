@@ -2,6 +2,7 @@
 #include <string>
 #include <fstream>
 #include <vector>
+#include <cstdlib>
 
 using namespace std;
 
@@ -97,7 +98,7 @@ void Bankaccount::Mainmenu() {
         cout << "Enter your choice: ";
         cin >> choice;
         cin.ignore();
-        system("clear"); // Windows: use "cls"
+        system("cls"); // Windows: use "cls"
         switch (choice) {
             case 1: deposit_money(); break;
             case 2: withdrawmoney(); break;
@@ -164,7 +165,6 @@ void Bankaccount::login_bankaccount() {
     cout << "  Login Account  " << endl;
     cout << "-------------------" << endl;
     cout << "Enter Account Number: ";
-    cin.ignore();
     getline(cin, enteredAccountNumber);
 
     account_number = enteredAccountNumber;
@@ -269,7 +269,7 @@ int main() {
         cout << "Enter Your Choice: ";
         cin >> choice;
         cin.ignore();
-        system("clear"); // Windows: use "cls"
+        system("cls"); // Windows: use "cls"
         switch (choice) {
             case 1: Account.create_account(); break;
             case 2: Account.login_bankaccount(); break;
